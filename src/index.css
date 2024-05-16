@@ -1,4 +1,7 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +14,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.containerr{
+   @apply  px-[1rem] sm:px-[2rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[6rem];
+    }
+  
+.links{
+   @apply hover:text-[#313bac] relative transition-[0.5s]; 
+}
+
+  .links:hover::after{
+    content:"";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #313bac;
+    width: 6px;
+    height: 6px;
+    transition: 0.5s;
+  }
