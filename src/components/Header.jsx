@@ -9,7 +9,7 @@ import Social from './Social'
 import { Fade, Flip, Zoom  } from "react-reveal";
 const Header = () => {
   return (
-    <div className='pt-[200px] lg:pt-0 flex lg:flex-row flex-col items-center bg-[#EDF2F8]  lg:h-[100vh] justify-center gap-20 '>
+    <div className='pt-[200px] lg:pt-0 flex lg:flex-row flex-col items-center bg-[#EDF2F8]  lg:h-[100vh] justify-center gap-20 ' id='home'>
           {/*Download CD*/}
            <Flip right> 
        <div className='flex flex-col gap-6 md:gap-10 items-center md:items-end w-full max-w-[400px]'> 

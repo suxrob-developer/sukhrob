@@ -6,7 +6,7 @@ import Inputs from './Inputs'
 
 const Contact = () => {
   return (
-    <div  >
+    <div id='contact' >
         <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 mt-5 md:my-16 justify-center'>Contact Me</div>
         <div className='max-w-[700px] w-full m-auto px-5 '>
             <div className='flex flex-wrap justify-center items-center gap-5  md:gap-10 mb-10'>
