@@ -3,12 +3,14 @@ import { Zoom } from 'react-reveal'
 
 import {WorksData} from '../database/works.db'
 import Social from './Social'
+import Translate from "../utils/Translate"
+
 const Works = () => {
   return (
     <div className='bg-[#edf2f8] py-5' id='works' >
         <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 mt-5 md:my-16 justify-center'>
-            <span>My</span>
-            <span className='text-[#313bac]'>Works</span>
+            <span><Translate dictionary={{ru:'Мои',en:'My'}}/></span>
+            <span className='text-[#313bac]'><Translate dictionary={{ru:'Работы',en:'Works'}}/></span>
         </div>
         <div className='flex flex-col justify-center items-center gap-5 '>
 
@@ -33,7 +35,7 @@ const Works = () => {
             </Zoom>
                 ) ) }  
         </div>
-                <div className='text-[14px] py-5 text-right w-[90%] md:absolute bottom-[20px] right-[40px] mt-[20px]'>@2024 ABDUKARIMZODA SUKHROB </div>
+                <div className='text-[14px] py-5 text-right w-[90%] md:absolute bottom-[20px] right-[40px] mt-[20px]'><Translate dictionary={{ru:'@2024 АБДУКАРИМЗОДА СУХРОБ',en:'@2024 ABDUKARIMZODA SUKHROB'}}/></div>
       <Social/>  
     </div>
 

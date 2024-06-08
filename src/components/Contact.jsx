@@ -3,11 +3,13 @@ import Telegram from "../assets/telegram.png"
 import LinkedIn from "../assets/linkedin.png"
 import Phone from "../assets/phone.png"
 import Inputs from './Inputs'
+import Translate from "../utils/Translate"
+
 
 const Contact = () => {
   return (
     <div id='contact' >
-        <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 mt-5 md:my-16 justify-center'>Contact Me</div>
+        <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 mt-5 md:my-16 justify-center'> <Translate dictionary={{ru:'Свяжитесь со Mной',en:'Contact Me'}}/></div>
         <div className='max-w-[700px] w-full m-auto px-5 '>
             <div className='flex flex-wrap justify-center items-center gap-5  md:gap-10 mb-10'>
             <a className='flex min-w-[300px] w-full sm:-w-full h-[70px] px-10 justify-start gap-2 items-center bg-[#fef4f5] rounded-[10px] shadow-md hover:shadow-lg cursor-pointer'>

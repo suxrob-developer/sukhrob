@@ -5,8 +5,11 @@ import RacteImg from "../assets/react.png"
 import SassImg from "../assets/sass.png"
 import Social from './Social'
 
+
 // animation
 import { Fade, Flip, Zoom  } from "react-reveal";
+import Translate from '../utils/Translate'
+
 const Header = () => {
   return (
     <div className='pt-[200px] lg:pt-0 flex lg:flex-row flex-col items-center bg-[#EDF2F8]  lg:h-[100vh] justify-center gap-20 ' id='home'>
@@ -16,14 +19,15 @@ const Header = () => {
            <div className='flex justify-center items-center bg-[white] gap-3 md:gap-10 w-full max-w-[350px] p-3 text-center rounded-[10px] shadow-lg'>
               <p className=' text-[35px] lg:text-[40px]'>👋</p>
               <p className='flex flex-col'>
-                <span className='text-slate-400 text-[18px] lg:text-[20px]' >Hello, I am</span>
-                <span className='font-bold text-[30px]'>Sukhrob</span>
+                <span className='text-slate-400 text-[18px] lg:text-[20px]' ><Translate dictionary={{ru:'Привет,',en:'Hello, I am'}}/></span>
+                <span className='font-bold text-[30px]'><Translate dictionary={{ru:'Я Сухроб',en:'Sukhrob'}}/></span>
               </p>
            </div>
-           <div className='bg-[white] w-full max-w-[300px] p-3  rounded-[15px]  text-slate-400 text-[14px] lg:text-[18px] shadow-lg'>FRONTEND/REACT DEVELOPER
+           <div className='bg-[white] w-full max-w-[300px] p-3  rounded-[15px]  text-slate-400 text-[12px] lg:text-[14px] shadow-lg'><Translate dictionary={{ru:'ФРОНТЕНД/REACT РАЗРАБОТЧИК',en:'FRONTEND/REACT DEVELOPER'}}/>
            </div>
 
-          <a type="button" class="text-white bg-[#313bac] from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2">Downlaod CV</a>
+        <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-5 mt-5 md:my-12 justify-center'> </div>
+          <a type="button" class="text-white bg-[#313bac] from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2"><Translate dictionary={{ru:'Скачать резюме',en:'Downlaod CV'}}/></a>
        </div>
         </Flip> 
           {/* // gif for developer */}

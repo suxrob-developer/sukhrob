@@ -2,14 +2,14 @@
 import React from 'react'
 import { SkillsData } from '../database/skills.db'
 import { Fade } from 'react-reveal'
+import Translate from "../utils/Translate"
 
 const Skills = () => {
 
   return (
     <div className='h-auto sm:h-[40vh] md:h-[60vh] lg:h-[80vh] relative' id='skills'>
         <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 md:my-16 justify-center'>
-            <span>My</span>
-            <span className='text-[#313bac]'>Skills</span>
+            <span className='text-[#313bac]'><Translate dictionary={{ru:'Навыки',en:'Skills'}}/></span>
         </div>
         <div className='flex flex-wrap gap-5 md:gap-10  py-10 justify-center items-center w-[90%] md:w-[70%] m-auto'>
             {SkillsData.map((item)=>(
@@ -23,7 +23,7 @@ const Skills = () => {
         </Fade>
             ))}
         </div>
-        <div className='text-[14px] py-5 text-right w-[90%] md:absolute bottom-[20px] right-[40px] mt-[20px]'>@2024 ABDUKARIMZODA SUKHROB </div>
+        <div className='text-[14px] py-5 text-right w-[90%] md:absolute bottom-[20px] right-[40px] mt-[20px]'><Translate dictionary={{ru:'@2024 АБДУКАРИМЗОДА СУХРОБ',en:'@2024 ABDUKARIMZODA SUKHROB'}}/> </div>
     </div>
   )
 }
